@@ -13,7 +13,7 @@ class SpirvToolsConan(ConanFile):
         "glslang/master-tot@wumo/stable",
         "spirv-headers/1.5.3@wumo/stable"
     )
-    exports_sources = ["CMakeLists.txt", "CONAN_PKG__.patch"]
+    exports_sources = ["CMakeLists.txt"]
     generators = "cmake"
     
     settings = "os", "arch", "build_type", "compiler"
