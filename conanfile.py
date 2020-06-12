@@ -52,6 +52,6 @@ class SpirvToolsConan(ConanFile):
         tools.rmdir(os.path.join(self.package_folder, "lib", "pkgconfig"))
     
     def package_info(self):
-        self.cpp_info.names["cmake_find_package"] = "effcee"
-        self.cpp_info.names["cmake_find_package_multi"] = "effcee"
+        self.cpp_info.names["cmake_find_package"] = "SPIRV-Tools"
+        self.cpp_info.names["cmake_find_package_multi"] = "SPIRV-Tools"
         self.cpp_info.libs = tools.collect_libs(self)
