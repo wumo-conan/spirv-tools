@@ -9,9 +9,9 @@ class SpirvToolsConan(ConanFile):
     license = "Apache-2.0"
 
     requires = (
-        "effcee/2019.0@wumo/test",
+        "effcee/2019.0@wumo/stable",
         "glslang/master-tot@wumo/stable",
-        "spirv-headers/1.5.3@wumo/test"
+        "spirv-headers/1.5.3@wumo/stable"
     )
     exports_sources = ["CMakeLists.txt", "CONAN_PKG__.patch"]
     generators = "cmake"
